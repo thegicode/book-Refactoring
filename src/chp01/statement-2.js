@@ -4,7 +4,6 @@ const invoice = require("./invoices.json");
 console.log(statement(invoice));
 
 function statement(invoice) {
-    let totalAmount = 0;
     let result = `청구 내역 (고객명: ${invoice.customer})\n`;
 
     for (let perf of invoice.performances) {
@@ -12,10 +11,9 @@ function statement(invoice) {
         result += ` ${playFor(perf).name}: ${usd(amountFor(perf))} (${
             perf.audience
         }석)\n`;
-        totalAmount += amountFor(perf);
     }
 
-    result += `총액: ${usd(totalAmount)}\n`;
+    result += `총액: ${usd(totalAmount())}\n`;
     result += `적립 포인트: ${totalValuneCredits()}점\n`;
     return result;
 }
@@ -71,4 +69,12 @@ function totalValuneCredits() {
         volumeCredits += volumeCreditsFor(perf);
     }
     return volumeCredits;
+}
+
+function totalAmount() {
+    let totalAmount = 0;
+    for (let perf of invoice.performances) {
+        totalAmount += amountFor(perf);
+    }
+    return totalAmount;
 }

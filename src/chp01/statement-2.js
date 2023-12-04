@@ -16,6 +16,42 @@ function statement(invoice) {
     result += `적립 포인트: ${totalVolumeCredits()}점\n`;
     return result;
 
+    function totalAmount() {
+        let result = 0;
+        for (let perf of invoice.performances) {
+            result += amountFor(perf);
+        }
+        return result;
+    }
+
+    function totalVolumeCredits() {
+        let result = 0;
+        for (let perf of invoice.performances) {
+            result += volumeCreditsFor(perf);
+        }
+        return result;
+    }
+
+    function usd(aNumber) {
+        return new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+            minimumFractionDigits: 2,
+        }).format(aNumber / 100);
+    }
+
+    function volumeCreditsFor(aPerformance) {
+        let volumeCredits = 0;
+        volumeCredits += Math.max(aPerformance.audience - 30, 0);
+        if ("comedy" === playFor(aPerformance).type)
+            volumeCredits += Math.floor(aPerformance.audience / 5);
+        return volumeCredits;
+    }
+
+    function playFor(aPerformance) {
+        return plays[aPerformance.playID];
+    }
+
     function amountFor(aPerformance) {
         // 값이 바뀌지 않는 변수는 매개변수로 전달
         let result = 0; // 변수를 초기화하는 코드
@@ -39,41 +75,5 @@ function statement(invoice) {
         }
 
         return result; // 함수 안에서 값이 바뀌는 함수 반환
-    }
-
-    function playFor(aPerformance) {
-        return plays[aPerformance.playID];
-    }
-
-    function volumeCreditsFor(aPerformance) {
-        let volumeCredits = 0;
-        volumeCredits += Math.max(aPerformance.audience - 30, 0);
-        if ("comedy" === playFor(aPerformance).type)
-            volumeCredits += Math.floor(aPerformance.audience / 5);
-        return volumeCredits;
-    }
-
-    function usd(aNumber) {
-        return new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD",
-            minimumFractionDigits: 2,
-        }).format(aNumber / 100);
-    }
-
-    function totalVolumeCredits() {
-        let result = 0;
-        for (let perf of invoice.performances) {
-            result += volumeCreditsFor(perf);
-        }
-        return result;
-    }
-
-    function totalAmount() {
-        let result = 0;
-        for (let perf of invoice.performances) {
-            result += amountFor(perf);
-        }
-        return result;
     }
 }

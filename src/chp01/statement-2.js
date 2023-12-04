@@ -1,9 +1,9 @@
 const plays = require("./plays.json");
-const invoice = require("./invoices.json");
+const invoices = require("./invoices.json");
 
-console.log(statement(invoice));
+console.log(statement(invoices, plays));
 
-function statement(invoice) {
+function statement(invoice, plays) {
     let result = `청구 내역 (고객명: ${invoice.customer})\n`;
 
     for (let perf of invoice.performances) {

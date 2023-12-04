@@ -1,7 +1,7 @@
 const plays = require("./plays.json");
-const invoices = require("./invoices.json");
+const invoice = require("./invoices.json");
 
-console.log(statement(invoices));
+console.log(statement(invoice));
 
 function statement(invoice) {
     let totalAmount = 0;

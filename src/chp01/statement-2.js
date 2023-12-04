@@ -14,7 +14,7 @@ function statement(invoice) {
     }
 
     result += `총액: ${usd(totalAmount())}\n`;
-    result += `적립 포인트: ${totalValuneCredits()}점\n`;
+    result += `적립 포인트: ${totalVolumeCredits()}점\n`;
     return result;
 }
 
@@ -63,18 +63,18 @@ function usd(aNumber) {
     }).format(aNumber / 100);
 }
 
-function totalValuneCredits() {
-    let volumeCredits = 0;
+function totalVolumeCredits() {
+    let result = 0;
     for (let perf of invoice.performances) {
-        volumeCredits += volumeCreditsFor(perf);
+        result += volumeCreditsFor(perf);
     }
-    return volumeCredits;
+    return result;
 }
 
 function totalAmount() {
-    let totalAmount = 0;
+    let result = 0;
     for (let perf of invoice.performances) {
-        totalAmount += amountFor(perf);
+        result += amountFor(perf);
     }
-    return totalAmount;
+    return result;
 }

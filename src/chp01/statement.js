@@ -4,7 +4,7 @@ import invoices from "./invoices.json" assert { type: "json" };
 import createStatementData from "./createStatementData.js";
 
 console.log(statement(invoices, plays));
-console.log(htmlStatement(invoices, plays));
+// console.log(htmlStatement(invoices, plays));
 
 function statement(invoice, plays) {
     return renderPlainText(createStatementData(invoice, plays));

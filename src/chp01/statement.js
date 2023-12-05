@@ -1,17 +1,14 @@
-import plays from "./plays.json" assert { type: "json" };
-import invoices from "./invoices.json" assert { type: "json" };
+export { statement };
+export { htmlStatement };
 
 import createStatementData from "./createStatementData.js";
 
-console.log(statement(invoices, plays));
-// console.log(htmlStatement(invoices, plays));
-
-function statement(invoice, plays) {
-    return renderPlainText(createStatementData(invoice, plays));
-}
-
-function htmlStatement(invoice, plays) {
-    return renderHtml(createStatementData(invoice, plays));
+function usd(aNumber) {
+    return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 2,
+    }).format(aNumber / 100);
 }
 
 function renderPlainText(data) {
@@ -51,12 +48,12 @@ function renderHtml(data) {
     result += `<p>총액: <em>${usd(data.totalAmount)}</em></p>\n`;
     result += `<p>적립 포인트: <em>${data.totalVolumeCredits}</em>점</p>\n`;
     return result;
+}
 
-    function usd(aNumber) {
-        return new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD",
-            minimumFractionDigits: 2,
-        }).format(aNumber / 100);
-    }
+function htmlStatement(invoice, plays) {
+    return renderHtml(createStatementData(invoice, plays));
+}
+
+function statement(invoice, plays) {
+    return renderPlainText(createStatementData(invoice, plays));
 }

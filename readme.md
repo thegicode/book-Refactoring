@@ -19,3 +19,12 @@
 # 17
 
     - [IDE들이 제공하는 리팩터링 목록](https://docs.google.com/spreadsheets/d/1nFx-PjZ9Qs3QBZFzaMo6MSUSrWjSsO-iz5kpBtlVRPQ/edit#gid=866204681)
+
+# 63
+
+    - 전체 로직을 구성하는 요소 각각이 ~
+
+# 64
+
+    - 캠핑자들에게는 ~
+    - 리팩터링과 기능 추가 시이의 균형~

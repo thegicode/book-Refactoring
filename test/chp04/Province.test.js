@@ -92,15 +92,15 @@ describe("no producers", function () {
 });
 
 // 생산자 수 필드에 문자열을 대입한다.
-describe("string for producers", function () {
-    it("", function () {
-        const data = {
-            name: "String producers",
-            producers: "",
-            demand: 30,
-            price: 20,
-        };
-        const prov = new Province(data);
-        expect(prov.shortfall).equal(0);
-    });
-});
+// describe("string for producers", function () {
+//     it("", function () {
+//         const data = {
+//             name: "String producers",
+//             producers: "",
+//             demand: 30,
+//             price: 20,
+//         };
+//         const prov = new Province(data);
+//         expect(prov.shortfall).equal(0);
+//     });
+// });

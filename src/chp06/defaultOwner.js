@@ -26,4 +26,6 @@ class Person {
     get firstName() {
         return this._firstName;
     }
+
+    // add set
 }

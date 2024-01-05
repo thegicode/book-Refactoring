@@ -1,7 +1,6 @@
 import {
     aquireReading,
     Reading,
-    taxThreshold,
 } from "../../src/chp06/CombineFuncionIntoClass.js";
 
 // const aReading = aquireReading();

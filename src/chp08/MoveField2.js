@@ -1,3 +1,5 @@
+import { assert } from "chai";
+
 /* export class Account {
     constructor(number, type, interestRate) {
         this._number = number;

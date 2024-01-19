@@ -1,4 +1,4 @@
-class Account {
+export class Account {
     constructor(AccountType, daysOverdrawn) {
         this.type = AccountType;
         this._daysOverdrawn = daysOverdrawn;

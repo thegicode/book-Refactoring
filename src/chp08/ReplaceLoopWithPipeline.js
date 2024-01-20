@@ -1,6 +1,7 @@
 // 회사의 지점 사무실 정보를 CSV 형태로 받아
 // India에 자리한 사무실을 찾아서 도시명과 전화번호를 반환
 
+// 0. 원래 코드
 /* export function acquireData(input) {
     const lines = input.split("\n"); // 컬렉션
     let firstLine = true;

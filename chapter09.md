@@ -48,3 +48,18 @@
 -   데이터 구조가 중요한 만큼 반드시 깔끔하게 괸라해야 한다.
     -   깊어진 이해를 프로그램에 반드시 반영해야 한다.
 -   클래스 마찬가지
+
+-   [Rename.js](./src/chp09/RenameField.js)
+
+<br>
+
+## 9.3 파생 변수를 질의 함수로 바꾸기 Replace Derived Variable with Query
+
+### 배경
+
+-   338 가변 데이터의 유료 범위를 가능한 한 좁혀야 한다.
+-   효과가 좋은 방법으로, 값을 쉽게 계산해낼 수 있는 변수들을 모두 제거할 수 있다.
+
+## 예시
+
+-   [ReplaceDerivedVariableWithQuery.js](./src/chp09/ReplaceDerivedVariableWithQuery.js)

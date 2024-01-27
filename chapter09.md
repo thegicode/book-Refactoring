@@ -63,3 +63,7 @@
 ## 예시
 
 -   [ReplaceDerivedVariableWithQuery.js](./src/chp09/ReplaceDerivedVariableWithQuery.js)
+
+## 예시 : 소스가 둘 이상일 때
+
+-   때에 따라서는 둘 이상의 요소가 관여되기도 한다.

@@ -67,3 +67,6 @@
 ## 예시 : 소스가 둘 이상일 때
 
 -   때에 따라서는 둘 이상의 요소가 관여되기도 한다.
+-   [ReplaceDerivedVariableWithQuery2.js](./src/chp09/ReplaceDerivedVariableWithQuery2.js)
+
+<br>

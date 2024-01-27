@@ -70,3 +70,10 @@
 -   [ReplaceDerivedVariableWithQuery2.js](./src/chp09/ReplaceDerivedVariableWithQuery2.js)
 
 <br>
+
+## 9.4 참조를 값으로 바꾸기 Change Reference to Value
+
+### 배경
+
+-   객체(데이터 구조)를 다른 객체(데이터 구조)에 중첩하면 내부 객체를 참조 혹은 값으로 취급할 수 있다.
+-   [ChangeReferenceToValue.js](./src/chp09/ChangeReferenceToValue.js)

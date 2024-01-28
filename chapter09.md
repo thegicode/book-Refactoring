@@ -77,3 +77,16 @@
 
 -   객체(데이터 구조)를 다른 객체(데이터 구조)에 중첩하면 내부 객체를 참조 혹은 값으로 취급할 수 있다.
 -   [ChangeReferenceToValue.js](./src/chp09/ChangeReferenceToValue.js)
+
+<br>
+
+## 9.5 값을 참조로 바꾸기 Change Value to Reference
+
+## 배경
+
+-   347 값으로 다룬다면 고객 데이터가 각 주문에 복사되고, 참조로 다룬다면 여러 주문이 단 하나의 데이터 구조를 참조하게 된다.
+-   348 값을 참조로 바꾸면 entity 하나당 객체도 단 하나만 존재하게 되는데, 그러면 보통 이런 객체들을 한데 모아놓고 클라이언트들의 접근을 관리해주는 일종의 저장소가 필요해진다. 각 엔티티를 표현하는 객체를 한 번만 만들고, 객체가 필요한 곳에서는 모두 이 저장소로부터 얻어 ㅆ느는 방식이 된다.
+
+## 예시 : Order class,
+
+-   [ChangeValueToReference.js](./src/chp09/ChangeValueToReference.js)

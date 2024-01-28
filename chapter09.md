@@ -90,3 +90,15 @@
 ## 예시 : Order class,
 
 -   [ChangeValueToReference.js](./src/chp09/ChangeValueToReference.js)
+
+<br>
+
+## 9.6 매직 리터럴 바꾸기 Replace Magic Literal
+
+## 배경
+
+-   351 magic literal이란 소스 코드에 (보통은 여러 곳에) 등장하는 일반적인 리터럴 값을 말한다.
+-   상수를 정의하고 숫자 대신 상수를 사용하도록 바꾸면 될 것이다.
+-   일반적으로 해당 값이 쓰이는 모든 곳을 적절한 이름의 상수로 바꿔주는 방법이 가장 좋다.
+-   다른 선택지도 있는데, 그 상수가 특별한 비교 로직에 주로 쓰이는 경우에 고려해볼 수 있는 방법이다.
+    -   예) aValue === "M" -> isMale(aValue) 라는 호출 함수로 바꾸는 쪽을 선호한다.

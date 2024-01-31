@@ -28,3 +28,20 @@
 
 -   if 문이 중첩되어 나오면 and를 사용해야 한다.
 -   [ConsolidateConditionalExpession2.js](./src/chp10/ConsolidateConditionalExpession2.js)
+
+<br>
+
+## 10.3 중첩 조건문을 보호 구문으로 바꾸기 Replace Nested Conditional with Guard Clauses
+
+### 배경
+
+-   361 중첩 조건문을 보호 구문으로 바꾸기 리팩터링의 핵심은 의도를 부각하는 데 있다.
+
+    -   나는 if-then-else 구조를 사용할 떄 if절과 else절에 똑같은 무게를 두어, 코드를 읽는 이에게 양 갈래가 똑같이 중요하다는 뜻을 전달한다.
+    -   이와 달리, 보호 구문은 "이건 이 함수의 핵심이 아니다. 이 일이 일어나면 무언가 조치를 취한 후 함수에서 빠져나온다."라고 이야기한다.
+
+-   [ReplaceNestedConditionalwithGuardClauses.js](./src/chp10/ReplaceNestedConditionalwithGuardClauses.js)
+
+### 예시: 조건 반대로 만들기
+
+-   이 리팩터링을 수행할 때는 조건식을 반대로 만들어 적용하는 경우도 많다고 알려왔다.

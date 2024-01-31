@@ -45,3 +45,4 @@
 ### 예시: 조건 반대로 만들기
 
 -   이 리팩터링을 수행할 때는 조건식을 반대로 만들어 적용하는 경우도 많다고 알려왔다.
+-   [ReplaceNestedConditionalwithGuardClauses2.js](./src/chp10/ReplaceNestedConditionalwithGuardClauses2.js)

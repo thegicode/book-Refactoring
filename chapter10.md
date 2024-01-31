@@ -46,3 +46,24 @@
 
 -   이 리팩터링을 수행할 때는 조건식을 반대로 만들어 적용하는 경우도 많다고 알려왔다.
 -   [ReplaceNestedConditionalwithGuardClauses2.js](./src/chp10/ReplaceNestedConditionalwithGuardClauses2.js)
+
+<br>
+
+## 10.4 조건부 로직을 다형성으로 바꾸기 Replace Conditional with Polymorphism
+
+### 배경
+
+-   복잡한 조건부 로직은 프로그래밍에서 해석하기 가장 난해한 대상에 속한다.
+-   조건부 로직을 직관적으로 구조화할 방법을 항상 고민한다.
+-   흔한 예로, 타입을 여러 개 만들고 각 타입이 조건부 로직을 자신만의 방식으로 처리하도록 구성하는 방법이 있다.
+    -   이런 경우 case별로 클래스를 하나씩 만들어 공통 switch 로직의 중복을 없앨 수 있다.
+    -   다형성을 활용하여 어떻게 동작할지를 각 타입이 알아서 처리하도록 하면 된다.
+-   다른 예, 기본 동작을 위한 case문과 그 변형 동작으로 구성된 로직을 떠올릴 수 있다.
+    -   먼저 이 로직을 슈퍼클래스로 넣어서 변형 동작에 신경 쓰지 않고 기본에 집중하게 한다.
+-   다형성은 객체 지향 프로그래밍의 핵심이다.
+
+### 예시
+
+-   [ReplaceConditionalWithPolymorphism.js](./src/chp10/ReplaceConditionalWithPolymorphism.js)
+
+### 예시: 변형 동작을 다형성으로 표현하기

@@ -67,3 +67,5 @@
 -   [ReplaceConditionalWithPolymorphism.js](./src/chp10/ReplaceConditionalWithPolymorphism.js)
 
 ### 예시: 변형 동작을 다형성으로 표현하기
+
+-   [ReplaceConditionalWithPolymorphism2.js](./src/chp10/ReplaceConditionalWithPolymorphism2.js)

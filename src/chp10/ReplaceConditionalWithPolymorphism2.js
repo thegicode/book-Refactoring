@@ -63,7 +63,8 @@
 // voyageRisk(), captainHistoryRisk() 함수의 점수는 위험요소에,
 // voyageProfitFactor() 점ㅅ는 잠재 수익에 반영된다.
 // rating() 함수는 두 값을 종합하여 요청한 항해의 최종 등급을 계산한다.
-/*  호출하는 쪽 코드
+
+// 호출하는 쪽 코드
 const voyage = { zone: "west-indies", length: 10 };
 const history = [
     { zone: "east-indies", profit: 5 },
@@ -81,7 +82,6 @@ const history = [
     },
 ];
 const myRating = rating(voyage, history);
- */
 
 // 여기서 주목할 부분은 두 곳으로, 중국까지 항해해본 선장이 중국을 경유해 항해할 때를 다루는 조건부 로직들이다.
 // 이 특수한 상황을 다루는 로직들을 기본 동작에서 분리하기 위해서 상속과 다형성을 이용할 것이다.

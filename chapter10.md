@@ -69,3 +69,18 @@
 ### 예시: 변형 동작을 다형성으로 표현하기
 
 -   [ReplaceConditionalWithPolymorphism2.js](./src/chp10/ReplaceConditionalWithPolymorphism2.js)
+
+<br>
+
+## 10.5 특이 케이스 추가하기 Introduce Special Case
+
+### 배경
+
+-   388 코드베이스에서 특정 값에 대해 똑같이 반응하는 코드가 여러 곳이라면 그 반응들을 한 데로 모으는 게 효율적이다.
+-   특수한 경우의 공통 동작을 요소 하나에 모아서 사용하는 특이 케이스 패턴 Special Case Pattern이라는 것이 있는데, 바로 이럴 때 적용하면 좋은 메커니즘이다.
+-   특이 케이스 객체에서 단순히 데이터를 읽기만 한다면 반환할 값들을 담은 리터럴 객체 형태로 준비하면 된다. 그 이상의 어떤 동작을 수행해야 한다면 필요한 메서드를 담은 객체를 생성하면 된다. 특이 케이스 객체는 이를 캡슐화한 클래스가 반한하도록 만들 수도 있고, 변환 transform을 거쳐 데이터 구조에 추가시키는 형태도 될 수 있다.
+-   null은 특이 케이스로 처리해야 할 때가 많다. 그래서 이 패턴을 Null Object Patter이라고도 한다.
+
+### 예시
+
+-   [IntroduceSpecialCase.js](./src/chp10/IntroduceSpecialCase.js)

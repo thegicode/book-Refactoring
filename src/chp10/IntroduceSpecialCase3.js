@@ -313,8 +313,6 @@ function enricehSite(aSite) {
     if (isUnknown(result.customer)) result.customer = unknownCustomer;
     else result.customer.isUnknown = false;
 
-    console.log("enricehSite", result);
-
     return result;
 }
 

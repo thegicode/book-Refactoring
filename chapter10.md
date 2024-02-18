@@ -124,7 +124,7 @@
 ### 예시 : 할인과 관련한 간단한 예
 
 -   고객은 상품 구입 시 할인율을 적용받는다.
--   [IntroduceAssertion.js](./src/chp10/IntroduceAssertion.js.js)
+-   [IntroduceAssertion.js](./src/chp10/IntroduceAssertion.js)
 
 -   어서션을 남발하는 것 역시 위험하다.
     -   나는 참이라고 생각하는 가정 모두에 어서션을 달지 않는다.
@@ -133,3 +133,15 @@
         -   데이터를 외부에서 읽어 온다면 그 값을 검사하는 작업은 (어서션의 대상인) 가정이 아니라 (예외 처리로 대응해야 하는) 프로그램 로직의 일부로 다뤄야 한다.
 
 <br>
+
+## 10.7 제어 플래그를 탈출문으로 바꾸기 Replace Control Falg with Break
+
+### 배경
+
+-   제어 플래그란 코드의 동작을 변경하는 데 사용되는 변수를 말하며, 어딘가에서 값을 계산해 제어 플래그에 설정한 후 다른 어딘가의 조건문에서 검사하는 형태로 쓰인다.
+-   모든 함수의 return문은 하나영 한다고 주장하는 사람도 있지만, 나는 동의하지 않는다.
+    -   함수에서 할 일을 마쳤다면 그 사실을 return문으로 명확히 알리는 편이 낫지 않을까?
+
+### 예시 : 사람 목록을 훑으면서 악당을 찾는 코드
+
+-   [ReplaceControlFalgWithBreak.js](./src/chp10/ReplaceControlFalgWithBreak.js)

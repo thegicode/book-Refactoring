@@ -31,4 +31,7 @@
 -   악당을 찾으면 그 사람의 이름을 반환하고 경고를 울린다.
 -   가장 먼저 찾은 악당만 취급한다.
 
+-   [SeperateQueryFromModifier.js](./src/chp11/SeperateQueryFromModifier.js)
+-   [SeperateQueryFromModifier.test.js](./test/chp11/SeperateQueryFromModifier.test.js)
+
 <br>

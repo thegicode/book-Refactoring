@@ -46,3 +46,28 @@
 
 -   [ParameterizeFunction.js](./src/chp11/ParameterizeFunction.js)
 -   [ParameterizeFunction.test.js](./test/chp11/ParameterizeFunction.test.js)
+
+<br>
+
+## 11.3 플래그 인수 제거하기 Remove Flag Argument
+
+### 배경
+
+-   플래그 인수 flag argument란 호출되는 함수가 실행할 로직을 호출하는 쪽에서 선택하기 위해 전달하는 인수다.
+-   플래그 인수를 싫어하는 이유
+    -   호출할 수 있는 함수들이 무엇이고 어떻게 호출해야 하는지를 이해하기가 어려워지기 때문이다.
+-   특정한 기능 하나만 수행하는 명시적인 함수를 제공하는 편이 훨씬 깔끔하다.
+-   플래그 인수가 되려면
+    -   호출하는 쪽에서 불리언 값으로 (프로그램에서 사용되는 데이터가 아닌) 리터럴 값을 건네야 한다.
+    -   또한 호출되는 함수는 그 인수를 (다른 함수에서 전달하는 데이터가 아닌) 제어 흐름을 결정하는 데 사용해야 한다.
+-   플래그 인수를 제거하면 코드가 깔끔해짐은 물론 프로그래밍 도구에도 도움을 준다.
+-   함수 하나에서 플래그 인수를 두 개 이상 사용하면 플래그 인수를 써야 하는 합당한 근거가 될 수 있다.
+    -   같은 로직을 조합해내는 더 간단한 함수를 만들 방법을 고민
+
+### 예시
+
+-   [RemoveFlagArgument.js](./src/chp11/RemoveFlagArgument.js)
+
+### 예시 : 매개변수를 까다로운 방식으로 사용할 때
+
+-   [RemoveFlagArgument2.js](./src/chp11/RemoveFlagArgument2.js)

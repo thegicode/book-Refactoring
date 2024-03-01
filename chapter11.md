@@ -35,3 +35,14 @@
 -   [SeperateQueryFromModifier.test.js](./test/chp11/SeperateQueryFromModifier.test.js)
 
 <br>
+
+## 11.2 함수 매개변수화하기 Parameterize Function
+
+### 배경
+
+-   두 함수의 로직이 아주 비슷하고 단지 리터럴 값만 다르다면, 그 다른 값만 매개변수로 받아 처리하는 함수 하나로 합쳐서 중복을 없앨 수 있다.
+
+### 예시
+
+-   [ParameterizeFunction.js](./src/chp11/ParameterizeFunction.js)
+-   [ParameterizeFunction.test.js](./test/chp11/ParameterizeFunction.test.js)

@@ -86,6 +86,8 @@
 
 ### 예시
 
--   [PreserveWholeObject.js](./src/chp11/PreserveWholeObject.js.js)
+-   [PreserveWholeObject.js](./src/chp11/PreserveWholeObject.js)
 
 ### 예시 : 새 함수를 다른 방식으로 만들기
+
+-   [PreserveWholeObject2.js](./src/chp11/PreserveWholeObject2.js)

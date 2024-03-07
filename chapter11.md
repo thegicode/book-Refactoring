@@ -190,7 +190,7 @@
 
 ### 예시
 
--   [RemoveSettingMethod.js](./src/chp11/ReplaceConstructorWithFactoryFunction.js)
+-   [ReplaceConstructorWithFactoryFunction.js](./src/chp11/ReplaceConstructorWithFactoryFunction.js)
 -   [ReplaceConstructorWithFactoryFunction.test.js](./test/chp11/ReplaceConstructorWithFactoryFunction.test.js)
 
 ### ChatGPT : 팩터리 함수란?

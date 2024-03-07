@@ -2,7 +2,7 @@ import { expect } from "chai";
 import {
     createEmployee,
     createEngineer,
-} from "../../src/chp11/Replace ConstructorWithFactoryFunction";
+} from "../../src/chp11/ReplaceConstructorWithFactoryFunction";
 
 describe("11.8  Replace Constructor with Factory Function: Employee", () => {
     it("create a Manager with the employee name", () => {

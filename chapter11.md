@@ -230,9 +230,9 @@
 
 -   '명령' : 이 맥락에서의 명령은 요청을 캡슐화한 객체로, 디자인 패턴 중 명령 패턴 command pattern 에서 말하는 명령과 같다.
 
-## 예시
+### 예시
 
--   자바스크립트는 허점이 많은 어어다. 하지만 함수를 일급으로 만든 선택은 아주 훌륭했다.
+-   자바스크립트는 허점이 많은 언어다. 하지만 함수를 일급으로 만든 선택은 아주 훌륭했다.
 
     -   하지만 명령을 사용하는 편이 나을 때가 없는 건 아니다.
 
@@ -240,3 +240,22 @@
 
 -   [ReplaceFunctionWithCommand.js](./src/chp11/ReplaceFunctionWithCommand.js)
 -   [ReplaceFunctionWithCommand.test.js](./test/chp11/ReplaceFunctionWithCommand.test.js)
+
+<br>
+
+## 11.10 명령을 함수로 바꾸기 Replace Command with Function
+
+### 배경
+
+-   명령 객체는 복잡한 연산을 다룰 수 있는 강력한 메커니즘을 제공한다.
+
+    -   구체적으로는, 큰 연산 하나를 여러 개의 작은 메서드로 쪼개고 필드를 이용해 쪼개진 메서드들끼지 정보를 공유할 수 있다.
+    -   또한 어떤 메서드를 호출하느냐에 따라 다른 효과를 줄 수 있고, 각 단계를 거치며 데이터를 조금씩 완성해갈 수도 있다.
+
+-   명령은 그저 함수를 하나 호출해 정해진 일을 수행하는 용도로 주로 쓰인다.
+    -   이런 상황이고 로직이 크게 복잡하지 않다면 명령 객체는 장점보다 단점이 크니 평범함 함수로 바꿔주는 게 낫다.
+
+### 예시
+
+-   [ReplaceCommandWithFunction.js](./src/chp11/ReplaceCommandWithFunction.js)
+-   [ReplaceCommandWithFunction.test.js](./test/chp11/ReplaceCommandWithFunction.test.js)

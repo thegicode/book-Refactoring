@@ -1,5 +1,5 @@
 /**
-## 11.11 수정된 값 반환하기 Return Modified Value
+ * 11.11 수정된 값 반환하기 Return Modified Value
  * GPS 위치 목록으로 다양한 계산을 수행하는 코드
  */
 
@@ -13,7 +13,7 @@
     const pace = totlaTime / 60 / totalDisatance;
 }
 
-// 이번 리팩터링에서는 고드 상승분 ascent 계산만을 고려할 것이다.
+// 이번 리팩터링에서는 고도 상승분 ascent 계산만을 고려할 것이다.
 
 {
     function calculateAscent() {

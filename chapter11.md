@@ -304,3 +304,16 @@
 
 -   [ReplaceErrorCodeWithException.js](./src/chp11/ReplaceErrorCodeWithException.js)
 -   [ReplaceErrorCodeWithException-full.js](./src/chp11/ReplaceErrorCodeWithException-full.js)
+
+<br>
+
+## 11.13 예외를 사전확인으로 바꾸기 Replace Exception with Precheck
+
+### 배경
+
+-   예외라는 개념은 프로그래밍 언어의 발전에 의미 있는 한걸음이었다.
+    -   오류 코드를 연쇄적으로 전파하던 긴 코드를 예외로 바꿔 깔끔히 제거할 수 있게 되었으니 말이다.
+    -   예외는 '뜻밖의 오류'라는, 말 그대로 예외적으로 동작할 때만 쓰여야 한다.
+    -   함수 수행 시 문제가 될 수 있는 조건을 함수 호출 전에 검사할 수 있다면, 예외를 던지는 대신 호출하는 곳에서 조건을 검사하도록 해야 한다.
+
+### 얘시

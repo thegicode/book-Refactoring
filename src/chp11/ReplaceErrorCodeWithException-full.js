@@ -1,7 +1,7 @@
 /**
  * 11.12 오류 코드를 예외로 바꾸기 Replace Error Code with Exception
  * 전역 테이블에서 배송지의 배송 규칙을 알아내는 코드
- * 전체 코드 리팩터링 과정
+ * ReplaceErrorCodeWithException.js 전체 코드 리팩터링 과정
  */
 
 {

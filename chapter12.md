@@ -146,7 +146,7 @@
 
 ### 예시
 
-    [ExtractSuperclass.js](./src/chp12/ExtractSuperclass.js)
+    - [ExtractSuperclass.js](./src/chp12/ExtractSuperclass.js)
 
 <br>
 
@@ -183,3 +183,5 @@
 -   "디자인 패턴" : '서브클래스를 상태 패턴 State Pattern이나 전략 패턴 Strategy Pattern"으로 대체
 
 ### 예시 : 서브클래스가 하나일 때
+
+-   [ReplaceSubclassWithDelegate.js](./src/chp12/ReplaceSubclassWithDelegate.js)

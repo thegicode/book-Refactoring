@@ -185,3 +185,7 @@
 ### 예시 : 서브클래스가 하나일 때
 
 -   [ReplaceSubclassWithDelegate.js](./src/chp12/ReplaceSubclassWithDelegate.js)
+
+### 예시 : 서브클래스가 여러 개일 때
+
+-   [ReplaceSubclassWithDelegate2.js](./src/chp12/ReplaceSubclassWithDelegate2.js)
